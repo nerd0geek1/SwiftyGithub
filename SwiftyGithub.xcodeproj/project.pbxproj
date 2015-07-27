@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		73024EF41B6631A700AC1BEA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF31B6631A700AC1BEA /* AuthService.swift */; };
+		73024EF61B6632D200AC1BEA /* AccessTokenApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF51B6632D200AC1BEA /* AccessTokenApi.swift */; };
+		73024EF81B66462D00AC1BEA /* AccessTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF71B66462D00AC1BEA /* AccessTokenRepository.swift */; };
+		73024EFA1B66468C00AC1BEA /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73024EF91B66468C00AC1BEA /* KeychainAccess.framework */; };
 		73A6DE691B66269800824661 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE671B66269800824661 /* Alamofire.framework */; };
 		73A6DE6A1B66269800824661 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE681B66269800824661 /* ObjectMapper.framework */; };
 		73B9688A1B6622700048C25E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73B968891B6622700048C25E /* Images.xcassets */; };
@@ -26,6 +30,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		73024EF31B6631A700AC1BEA /* AuthService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		73024EF51B6632D200AC1BEA /* AccessTokenApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenApi.swift; sourceTree = "<group>"; };
+		73024EF71B66462D00AC1BEA /* AccessTokenRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenRepository.swift; sourceTree = "<group>"; };
+		73024EF91B66468C00AC1BEA /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
 		73A6DE671B66269800824661 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		73A6DE681B66269800824661 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		73B9687D1B6622700048C25E /* SwiftyGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -45,6 +53,7 @@
 			files = (
 				73A6DE691B66269800824661 /* Alamofire.framework in Frameworks */,
 				73A6DE6A1B66269800824661 /* ObjectMapper.framework in Frameworks */,
+				73024EFA1B66468C00AC1BEA /* KeychainAccess.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,9 +67,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		73024EF11B66318100AC1BEA /* model */ = {
+			isa = PBXGroup;
+			children = (
+				73024EF21B66319000AC1BEA /* auth */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		73024EF21B66319000AC1BEA /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				73024EF31B6631A700AC1BEA /* AuthService.swift */,
+				73024EF51B6632D200AC1BEA /* AccessTokenApi.swift */,
+				73024EF71B66462D00AC1BEA /* AccessTokenRepository.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
 		73B968741B6622700048C25E = {
 			isa = PBXGroup;
 			children = (
+				73024EF91B66468C00AC1BEA /* KeychainAccess.framework */,
 				73A6DE671B66269800824661 /* Alamofire.framework */,
 				73A6DE681B66269800824661 /* ObjectMapper.framework */,
 				73B9687F1B6622700048C25E /* SwiftyGithub */,
@@ -117,6 +145,7 @@
 			isa = PBXGroup;
 			children = (
 				73B968A31B6622E00048C25E /* appdelegate */,
+				73024EF11B66318100AC1BEA /* model */,
 				73B968A61B6622F40048C25E /* viewcontroller */,
 			);
 			path = classes;
@@ -241,6 +270,7 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 			);
 			outputPaths = (
 			);
@@ -255,6 +285,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73024EF81B66462D00AC1BEA /* AccessTokenRepository.swift in Sources */,
+				73024EF61B6632D200AC1BEA /* AccessTokenApi.swift in Sources */,
+				73024EF41B6631A700AC1BEA /* AuthService.swift in Sources */,
 				73B968A81B6622FD0048C25E /* ViewController.swift in Sources */,
 				73B968A51B6622E90048C25E /* AppDelegate.swift in Sources */,
 			);
@@ -372,6 +405,7 @@
 				INFOPLIST_FILE = SwiftyGithub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
