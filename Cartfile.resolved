@@ -1,0 +1,2 @@
+git "git@github.com:Alamofire/Alamofire.git" "1.3.0"
+git "git@github.com:Hearst-DD/ObjectMapper.git" "0.12"
