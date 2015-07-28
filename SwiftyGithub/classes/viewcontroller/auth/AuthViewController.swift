@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  AuthViewController.swift
 //  SwiftyGithub
 //
 //  Created by Kohei Tabata on 7/27/15.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController, UIWebViewDelegate {
+class AuthViewController: UIViewController, UIWebViewDelegate {
 
     private var webView = UIWebView()
     
@@ -63,8 +63,10 @@ class ViewController: UIViewController, UIWebViewDelegate {
                 }
                 AuthService.sharedService.signInWithCode(keyValue[1], completionBlock: { (error) -> Void in
                     if let error = error {
+                        //TODO: error handling
                         return
                     }
+                    (UIApplication.sharedApplication().delegate as? AppDelegate)?.setupViewController()
                 })
                 
                 return false

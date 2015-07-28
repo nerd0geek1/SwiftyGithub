@@ -15,11 +15,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
-        let viewController = ViewController(nibName: nil, bundle: nil)
-        window?.rootViewController = viewController
-        window?.makeKeyAndVisible()
-        
+        setupViewController()
         return true
     }
 
@@ -37,5 +33,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationWillTerminate(application: UIApplication) {
     }
+    
+    //MARK: - private
+    
+    func setupViewController() {
+        if AuthService.sharedService.isSignedIn() {
+            let tabBarController = UITabBarController()
+            let repositoryViewController = RepositoryViewController()
+            tabBarController.viewControllers = [repositoryViewController]
+            window?.rootViewController = tabBarController
+        } else {
+            let viewController = AuthViewController(nibName: nil, bundle: nil)
+            window?.rootViewController = viewController
+        }
+        window?.makeKeyAndVisible()
+    }
 }
-

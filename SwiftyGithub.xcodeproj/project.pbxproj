@@ -11,12 +11,17 @@
 		73024EF61B6632D200AC1BEA /* AccessTokenApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF51B6632D200AC1BEA /* AccessTokenApi.swift */; };
 		73024EF81B66462D00AC1BEA /* AccessTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF71B66462D00AC1BEA /* AccessTokenRepository.swift */; };
 		73024EFA1B66468C00AC1BEA /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73024EF91B66468C00AC1BEA /* KeychainAccess.framework */; };
+		730490001B671CE6007764FD /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73048FFF1B671CE6007764FD /* AuthViewController.swift */; };
+		730490031B671E6F007764FD /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490021B671E6F007764FD /* RepositoryViewController.swift */; };
+		730490051B67226C007764FD /* OwnedRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490041B67226C007764FD /* OwnedRepositoryViewController.swift */; };
+		730490071B672287007764FD /* StarredRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490061B672287007764FD /* StarredRepositoryViewController.swift */; };
+		730490091B67229A007764FD /* TrendingRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490081B67229A007764FD /* TrendingRepositoryViewController.swift */; };
+		7304900B1B6722AD007764FD /* ExploreRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304900A1B6722AD007764FD /* ExploreRepositoryViewController.swift */; };
 		73A6DE691B66269800824661 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE671B66269800824661 /* Alamofire.framework */; };
 		73A6DE6A1B66269800824661 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE681B66269800824661 /* ObjectMapper.framework */; };
 		73B9688A1B6622700048C25E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73B968891B6622700048C25E /* Images.xcassets */; };
 		73B968991B6622700048C25E /* SwiftyGithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968981B6622700048C25E /* SwiftyGithubTests.swift */; };
 		73B968A51B6622E90048C25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968A41B6622E90048C25E /* AppDelegate.swift */; };
-		73B968A81B6622FD0048C25E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968A71B6622FC0048C25E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +39,12 @@
 		73024EF51B6632D200AC1BEA /* AccessTokenApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenApi.swift; sourceTree = "<group>"; };
 		73024EF71B66462D00AC1BEA /* AccessTokenRepository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccessTokenRepository.swift; sourceTree = "<group>"; };
 		73024EF91B66468C00AC1BEA /* KeychainAccess.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = KeychainAccess.framework; path = Carthage/Build/iOS/KeychainAccess.framework; sourceTree = "<group>"; };
+		73048FFF1B671CE6007764FD /* AuthViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		730490021B671E6F007764FD /* RepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
+		730490041B67226C007764FD /* OwnedRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OwnedRepositoryViewController.swift; sourceTree = "<group>"; };
+		730490061B672287007764FD /* StarredRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarredRepositoryViewController.swift; sourceTree = "<group>"; };
+		730490081B67229A007764FD /* TrendingRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryViewController.swift; sourceTree = "<group>"; };
+		7304900A1B6722AD007764FD /* ExploreRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreRepositoryViewController.swift; sourceTree = "<group>"; };
 		73A6DE671B66269800824661 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		73A6DE681B66269800824661 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		73B9687D1B6622700048C25E /* SwiftyGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -43,7 +54,6 @@
 		73B968971B6622700048C25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73B968981B6622700048C25E /* SwiftyGithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGithubTests.swift; sourceTree = "<group>"; };
 		73B968A41B6622E90048C25E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		73B968A71B6622FC0048C25E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +93,26 @@
 				73024EF71B66462D00AC1BEA /* AccessTokenRepository.swift */,
 			);
 			path = auth;
+			sourceTree = "<group>";
+		};
+		73048FFB1B671CA8007764FD /* auth */ = {
+			isa = PBXGroup;
+			children = (
+				73048FFF1B671CE6007764FD /* AuthViewController.swift */,
+			);
+			path = auth;
+			sourceTree = "<group>";
+		};
+		730490011B671D19007764FD /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				730490021B671E6F007764FD /* RepositoryViewController.swift */,
+				730490041B67226C007764FD /* OwnedRepositoryViewController.swift */,
+				730490061B672287007764FD /* StarredRepositoryViewController.swift */,
+				730490081B67229A007764FD /* TrendingRepositoryViewController.swift */,
+				7304900A1B6722AD007764FD /* ExploreRepositoryViewController.swift */,
+			);
+			path = repository;
 			sourceTree = "<group>";
 		};
 		73B968741B6622700048C25E = {
@@ -162,7 +192,8 @@
 		73B968A61B6622F40048C25E /* viewcontroller */ = {
 			isa = PBXGroup;
 			children = (
-				73B968A71B6622FC0048C25E /* ViewController.swift */,
+				73048FFB1B671CA8007764FD /* auth */,
+				730490011B671D19007764FD /* repository */,
 			);
 			path = viewcontroller;
 			sourceTree = "<group>";
@@ -285,10 +316,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7304900B1B6722AD007764FD /* ExploreRepositoryViewController.swift in Sources */,
+				730490051B67226C007764FD /* OwnedRepositoryViewController.swift in Sources */,
 				73024EF81B66462D00AC1BEA /* AccessTokenRepository.swift in Sources */,
 				73024EF61B6632D200AC1BEA /* AccessTokenApi.swift in Sources */,
 				73024EF41B6631A700AC1BEA /* AuthService.swift in Sources */,
-				73B968A81B6622FD0048C25E /* ViewController.swift in Sources */,
+				730490071B672287007764FD /* StarredRepositoryViewController.swift in Sources */,
+				730490001B671CE6007764FD /* AuthViewController.swift in Sources */,
+				730490031B671E6F007764FD /* RepositoryViewController.swift in Sources */,
+				730490091B67229A007764FD /* TrendingRepositoryViewController.swift in Sources */,
 				73B968A51B6622E90048C25E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
