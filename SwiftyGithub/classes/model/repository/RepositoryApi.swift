@@ -12,19 +12,17 @@ import Foundation
 
 class RepositoryApi {
     
-    func fetchSearchedRepositoryWithQuery(query: String, completionBlock:(NSError? -> Void)?) {
+    func fetchSearchedRepositoryWithQuery(query: String, completionBlock:((result: [Repository]?, error: NSError?) -> Void)?) {
         let path = String(format: "https://api.github.com/search/repositories")
+        
         let param = [
-            "q" : query
+            "q" : String("\(query) in:name")
         ]
         let headers = ["Accept" : "application/json"]
 
         Alamofire.request(.GET, path, parameters: param, headers: headers)
             .responseObject { (response: RepositoryList?, error: NSError?) in
-                if let repositoryList = response?.repositoryList {
-                    
-                }
-                completionBlock?(error)
+                completionBlock?(result: response?.repositoryList, error: error)
         }
     }
 }
