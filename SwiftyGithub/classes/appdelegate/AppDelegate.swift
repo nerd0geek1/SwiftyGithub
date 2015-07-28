@@ -40,7 +40,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         if AuthService.sharedService.isSignedIn() {
             let tabBarController = UITabBarController()
             let repositoryViewController = RepositoryViewController()
-            tabBarController.viewControllers = [repositoryViewController]
+            let repositoryNavigationController = UINavigationController(rootViewController: repositoryViewController)
+            tabBarController.viewControllers = [repositoryNavigationController]
             window?.rootViewController = tabBarController
         } else {
             let viewController = AuthViewController(nibName: nil, bundle: nil)

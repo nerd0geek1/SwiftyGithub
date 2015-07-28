@@ -17,6 +17,7 @@
 		730490071B672287007764FD /* StarredRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490061B672287007764FD /* StarredRepositoryViewController.swift */; };
 		730490091B67229A007764FD /* TrendingRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490081B67229A007764FD /* TrendingRepositoryViewController.swift */; };
 		7304900B1B6722AD007764FD /* ExploreRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304900A1B6722AD007764FD /* ExploreRepositoryViewController.swift */; };
+		7304900F1B67298B007764FD /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304900E1B67298B007764FD /* BaseTableViewCell.swift */; };
 		73A6DE691B66269800824661 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE671B66269800824661 /* Alamofire.framework */; };
 		73A6DE6A1B66269800824661 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE681B66269800824661 /* ObjectMapper.framework */; };
 		73B9688A1B6622700048C25E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73B968891B6622700048C25E /* Images.xcassets */; };
@@ -45,6 +46,7 @@
 		730490061B672287007764FD /* StarredRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StarredRepositoryViewController.swift; sourceTree = "<group>"; };
 		730490081B67229A007764FD /* TrendingRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryViewController.swift; sourceTree = "<group>"; };
 		7304900A1B6722AD007764FD /* ExploreRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreRepositoryViewController.swift; sourceTree = "<group>"; };
+		7304900E1B67298B007764FD /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
 		73A6DE671B66269800824661 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		73A6DE681B66269800824661 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		73B9687D1B6622700048C25E /* SwiftyGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,22 @@
 			path = repository;
 			sourceTree = "<group>";
 		};
+		7304900C1B67296D007764FD /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7304900D1B67297C007764FD /* base */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7304900D1B67297C007764FD /* base */ = {
+			isa = PBXGroup;
+			children = (
+				7304900E1B67298B007764FD /* BaseTableViewCell.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
 		73B968741B6622700048C25E = {
 			isa = PBXGroup;
 			children = (
@@ -176,6 +194,7 @@
 			children = (
 				73B968A31B6622E00048C25E /* appdelegate */,
 				73024EF11B66318100AC1BEA /* model */,
+				7304900C1B67296D007764FD /* view */,
 				73B968A61B6622F40048C25E /* viewcontroller */,
 			);
 			path = classes;
@@ -321,6 +340,7 @@
 				73024EF81B66462D00AC1BEA /* AccessTokenRepository.swift in Sources */,
 				73024EF61B6632D200AC1BEA /* AccessTokenApi.swift in Sources */,
 				73024EF41B6631A700AC1BEA /* AuthService.swift in Sources */,
+				7304900F1B67298B007764FD /* BaseTableViewCell.swift in Sources */,
 				730490071B672287007764FD /* StarredRepositoryViewController.swift in Sources */,
 				730490001B671CE6007764FD /* AuthViewController.swift in Sources */,
 				730490031B671E6F007764FD /* RepositoryViewController.swift in Sources */,
