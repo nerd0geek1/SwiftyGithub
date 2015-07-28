@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class RepositoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -27,11 +28,9 @@ class RepositoryViewController: UIViewController, UITableViewDataSource, UITable
         tableView.delegate = self
         tableView.registerClass(BaseTableViewCell.self, forCellReuseIdentifier: BaseTableViewCell.cellIdentifier())
         view.addSubview(tableView)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        tableView.frame = view.bounds
+        tableView.snp_makeConstraints { (make) -> Void in
+            make.edges.equalTo(self.view).insets(EdgeInsetsZero)
+        }
     }
     
     //MARK: - UITableViewDataSource

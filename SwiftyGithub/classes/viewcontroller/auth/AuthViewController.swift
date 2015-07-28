@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class AuthViewController: UIViewController, UIWebViewDelegate {
 
@@ -24,14 +25,12 @@ class AuthViewController: UIViewController, UIWebViewDelegate {
         super.viewDidLoad()
         view.backgroundColor = UIColor.whiteColor()
         view.addSubview(webView)
+        webView.snp_makeConstraints { (make) -> Void in
+            make.edges.equalTo(self.view).insets(EdgeInsetsZero)
+        }
         
         webView.delegate = self
         loadAuthorize()
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        webView.frame = view.bounds
     }
     
     private func loadAuthorize() {

@@ -27,6 +27,7 @@
 		73B968A51B6622E90048C25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968A41B6622E90048C25E /* AppDelegate.swift */; };
 		73EB6C8F1B674D240052CC8D /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */; };
 		73EB6C921B6750EA0052CC8D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB6C911B6750EA0052CC8D /* User.swift */; };
+		73EB6C941B6769B00052CC8D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB6C931B6769B00052CC8D /* SnapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,7 @@
 		73B968A41B6622E90048C25E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/ObjectMapper.framework"; sourceTree = "<group>"; };
 		73EB6C911B6750EA0052CC8D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		73EB6C931B6769B00052CC8D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 			files = (
 				734EB7E61B67491D00E99F00 /* Alamofire.framework in Frameworks */,
 				734EB7E71B67491D00E99F00 /* AlamofireObjectMapper.framework in Frameworks */,
+				73EB6C941B6769B00052CC8D /* SnapKit.framework in Frameworks */,
 				734EB7E81B67491D00E99F00 /* KeychainAccess.framework in Frameworks */,
 				73EB6C8F1B674D240052CC8D /* ObjectMapper.framework in Frameworks */,
 			);
@@ -156,6 +159,7 @@
 		73B968741B6622700048C25E = {
 			isa = PBXGroup;
 			children = (
+				73EB6C931B6769B00052CC8D /* SnapKit.framework */,
 				73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */,
 				730490171B673D8E007764FD /* AlamofireObjectMapper.framework */,
 				73024EF91B66468C00AC1BEA /* KeychainAccess.framework */,
@@ -351,6 +355,7 @@
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/SnapKit.framework",
 			);
 			outputPaths = (
 			);

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SnapKit
 
 class ExploreRepositoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate, UISearchBarDelegate {
     
@@ -19,18 +20,16 @@ class ExploreRepositoryViewController: UIViewController, UITableViewDataSource, 
         
         searchBar.delegate = self
         tableView.tableHeaderView = searchBar
-        let navigationBarFrame = navigationController?.navigationBar.bounds ?? CGRectZero
-        tableView.tableHeaderView?.frame = navigationBarFrame
+        let searchBarSize = searchBar.systemLayoutSizeFittingSize(UILayoutFittingCompressedSize)
+        tableView.tableHeaderView?.frame = CGRectMake(0, 0, searchBarSize.width, searchBarSize.height)
         
         tableView.dataSource = self
         tableView.delegate = self
         tableView.registerClass(BaseTableViewCell.self, forCellReuseIdentifier: BaseTableViewCell.cellIdentifier())
         view.addSubview(tableView)
-    }
-    
-    override func viewWillLayoutSubviews() {
-        super.viewWillLayoutSubviews()
-        tableView.frame = view.bounds
+        tableView.snp_makeConstraints { (make) -> Void in
+            make.edges.equalTo(self.view).insets(EdgeInsetsZero)
+        }
     }
     
     //MARK: - UITableViewDataSource

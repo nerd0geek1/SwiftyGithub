@@ -1,2 +1,3 @@
-git "git@github.com:kishikawakatsumi/KeychainAccess.git"
+github "kishikawakatsumi/KeychainAccess"
 github "tristanhimmelman/AlamofireObjectMapper" ~> 0.7
+github "SnapKit/SnapKit"
