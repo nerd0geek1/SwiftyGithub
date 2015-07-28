@@ -26,7 +26,7 @@ class Repository: Mappable {
     private(set) var id = NSNotFound
     private(set) var name = ""
     private(set) var fullname = ""
-//    private(set) var owner: user?
+    private(set) var owner: User! = nil
     private(set) var isPrivate = false
     private(set) var htmlURL: NSURL! = nil
     private(set) var description = ""
@@ -54,7 +54,7 @@ class Repository: Mappable {
         id              <- map["id"]
         name            <- map["name"]
         fullname        <- map["full_name"]
-//        owner: user?
+        owner           <- map["owner"]
         isPrivate       <- map["private"]
         htmlURL         <- (map["html_url"], URLTransform())
         description     <- map["description"]

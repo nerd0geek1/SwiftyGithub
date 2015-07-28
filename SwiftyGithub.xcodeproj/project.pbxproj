@@ -26,6 +26,7 @@
 		73B968991B6622700048C25E /* SwiftyGithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968981B6622700048C25E /* SwiftyGithubTests.swift */; };
 		73B968A51B6622E90048C25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968A41B6622E90048C25E /* AppDelegate.swift */; };
 		73EB6C8F1B674D240052CC8D /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */; };
+		73EB6C921B6750EA0052CC8D /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73EB6C911B6750EA0052CC8D /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +63,7 @@
 		73B968981B6622700048C25E /* SwiftyGithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGithubTests.swift; sourceTree = "<group>"; };
 		73B968A41B6622E90048C25E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/ObjectMapper.framework"; sourceTree = "<group>"; };
+		73EB6C911B6750EA0052CC8D /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +92,7 @@
 			isa = PBXGroup;
 			children = (
 				73024EF21B66319000AC1BEA /* auth */,
+				73EB6C901B6750DB0052CC8D /* user */,
 				730490141B673650007764FD /* repository */,
 			);
 			path = model;
@@ -235,6 +238,14 @@
 			path = viewcontroller;
 			sourceTree = "<group>";
 		};
+		73EB6C901B6750DB0052CC8D /* user */ = {
+			isa = PBXGroup;
+			children = (
+				73EB6C911B6750EA0052CC8D /* User.swift */,
+			);
+			path = user;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -360,6 +371,7 @@
 				73024EF61B6632D200AC1BEA /* AccessTokenApi.swift in Sources */,
 				73024EF41B6631A700AC1BEA /* AuthService.swift in Sources */,
 				7304900F1B67298B007764FD /* BaseTableViewCell.swift in Sources */,
+				73EB6C921B6750EA0052CC8D /* User.swift in Sources */,
 				730490071B672287007764FD /* StarredRepositoryViewController.swift in Sources */,
 				730490001B671CE6007764FD /* AuthViewController.swift in Sources */,
 				730490031B671E6F007764FD /* RepositoryViewController.swift in Sources */,

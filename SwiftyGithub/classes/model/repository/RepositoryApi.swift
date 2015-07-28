@@ -22,10 +22,7 @@ class RepositoryApi {
         Alamofire.request(.GET, path, parameters: param, headers: headers)
             .responseObject { (response: RepositoryList?, error: NSError?) in
                 if let repositoryList = response?.repositoryList {
-                    for repository in repositoryList {
-                        println("id:\(repository.id)")
-                        println("name:\(repository.name)")
-                    }
+                    
                 }
                 completionBlock?(error)
         }
