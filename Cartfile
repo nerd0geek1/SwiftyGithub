@@ -1,3 +1,2 @@
-git "git@github.com:Alamofire/Alamofire.git"
-git "git@github.com:Hearst-DD/ObjectMapper.git"
 git "git@github.com:kishikawakatsumi/KeychainAccess.git"
+github "tristanhimmelman/AlamofireObjectMapper" ~> 0.7

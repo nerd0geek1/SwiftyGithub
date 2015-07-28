@@ -9,5 +9,11 @@
 import UIKit
 
 class ExploreRepositoryViewController: UIViewController {
-
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        RepositoryApi().fetchSearchedRepositoryWithQuery("SwiftyGithub", completionBlock: { (error) -> Void in
+            
+        })
+    }
 }

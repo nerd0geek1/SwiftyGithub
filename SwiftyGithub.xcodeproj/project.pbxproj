@@ -10,7 +10,6 @@
 		73024EF41B6631A700AC1BEA /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF31B6631A700AC1BEA /* AuthService.swift */; };
 		73024EF61B6632D200AC1BEA /* AccessTokenApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF51B6632D200AC1BEA /* AccessTokenApi.swift */; };
 		73024EF81B66462D00AC1BEA /* AccessTokenRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73024EF71B66462D00AC1BEA /* AccessTokenRepository.swift */; };
-		73024EFA1B66468C00AC1BEA /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73024EF91B66468C00AC1BEA /* KeychainAccess.framework */; };
 		730490001B671CE6007764FD /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73048FFF1B671CE6007764FD /* AuthViewController.swift */; };
 		730490031B671E6F007764FD /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490021B671E6F007764FD /* RepositoryViewController.swift */; };
 		730490051B67226C007764FD /* OwnedRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490041B67226C007764FD /* OwnedRepositoryViewController.swift */; };
@@ -18,11 +17,15 @@
 		730490091B67229A007764FD /* TrendingRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490081B67229A007764FD /* TrendingRepositoryViewController.swift */; };
 		7304900B1B6722AD007764FD /* ExploreRepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304900A1B6722AD007764FD /* ExploreRepositoryViewController.swift */; };
 		7304900F1B67298B007764FD /* BaseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7304900E1B67298B007764FD /* BaseTableViewCell.swift */; };
-		73A6DE691B66269800824661 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE671B66269800824661 /* Alamofire.framework */; };
-		73A6DE6A1B66269800824661 /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE681B66269800824661 /* ObjectMapper.framework */; };
+		730490161B67365B007764FD /* Repository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490151B67365B007764FD /* Repository.swift */; };
+		7304901A1B673DE7007764FD /* RepositoryApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 730490191B673DE7007764FD /* RepositoryApi.swift */; };
+		734EB7E61B67491D00E99F00 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A6DE671B66269800824661 /* Alamofire.framework */; };
+		734EB7E71B67491D00E99F00 /* AlamofireObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 730490171B673D8E007764FD /* AlamofireObjectMapper.framework */; };
+		734EB7E81B67491D00E99F00 /* KeychainAccess.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73024EF91B66468C00AC1BEA /* KeychainAccess.framework */; };
 		73B9688A1B6622700048C25E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73B968891B6622700048C25E /* Images.xcassets */; };
 		73B968991B6622700048C25E /* SwiftyGithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968981B6622700048C25E /* SwiftyGithubTests.swift */; };
 		73B968A51B6622E90048C25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73B968A41B6622E90048C25E /* AppDelegate.swift */; };
+		73EB6C8F1B674D240052CC8D /* ObjectMapper.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,8 +50,10 @@
 		730490081B67229A007764FD /* TrendingRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryViewController.swift; sourceTree = "<group>"; };
 		7304900A1B6722AD007764FD /* ExploreRepositoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreRepositoryViewController.swift; sourceTree = "<group>"; };
 		7304900E1B67298B007764FD /* BaseTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTableViewCell.swift; sourceTree = "<group>"; };
+		730490151B67365B007764FD /* Repository.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Repository.swift; sourceTree = "<group>"; };
+		730490171B673D8E007764FD /* AlamofireObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AlamofireObjectMapper.framework; path = Carthage/Build/iOS/AlamofireObjectMapper.framework; sourceTree = "<group>"; };
+		730490191B673DE7007764FD /* RepositoryApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepositoryApi.swift; sourceTree = "<group>"; };
 		73A6DE671B66269800824661 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
-		73A6DE681B66269800824661 /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = Carthage/Build/iOS/ObjectMapper.framework; sourceTree = "<group>"; };
 		73B9687D1B6622700048C25E /* SwiftyGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftyGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73B968811B6622700048C25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73B968891B6622700048C25E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -56,6 +61,7 @@
 		73B968971B6622700048C25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		73B968981B6622700048C25E /* SwiftyGithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyGithubTests.swift; sourceTree = "<group>"; };
 		73B968A41B6622E90048C25E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ObjectMapper.framework; path = "../../Library/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos/ObjectMapper.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +69,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73A6DE691B66269800824661 /* Alamofire.framework in Frameworks */,
-				73A6DE6A1B66269800824661 /* ObjectMapper.framework in Frameworks */,
-				73024EFA1B66468C00AC1BEA /* KeychainAccess.framework in Frameworks */,
+				734EB7E61B67491D00E99F00 /* Alamofire.framework in Frameworks */,
+				734EB7E71B67491D00E99F00 /* AlamofireObjectMapper.framework in Frameworks */,
+				734EB7E81B67491D00E99F00 /* KeychainAccess.framework in Frameworks */,
+				73EB6C8F1B674D240052CC8D /* ObjectMapper.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +90,7 @@
 			isa = PBXGroup;
 			children = (
 				73024EF21B66319000AC1BEA /* auth */,
+				730490141B673650007764FD /* repository */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -133,12 +141,22 @@
 			path = base;
 			sourceTree = "<group>";
 		};
+		730490141B673650007764FD /* repository */ = {
+			isa = PBXGroup;
+			children = (
+				730490151B67365B007764FD /* Repository.swift */,
+				730490191B673DE7007764FD /* RepositoryApi.swift */,
+			);
+			path = repository;
+			sourceTree = "<group>";
+		};
 		73B968741B6622700048C25E = {
 			isa = PBXGroup;
 			children = (
+				73EB6C8E1B674D240052CC8D /* ObjectMapper.framework */,
+				730490171B673D8E007764FD /* AlamofireObjectMapper.framework */,
 				73024EF91B66468C00AC1BEA /* KeychainAccess.framework */,
 				73A6DE671B66269800824661 /* Alamofire.framework */,
-				73A6DE681B66269800824661 /* ObjectMapper.framework */,
 				73B9687F1B6622700048C25E /* SwiftyGithub */,
 				73B968951B6622700048C25E /* SwiftyGithubTests */,
 				73B9687E1B6622700048C25E /* Products */,
@@ -318,9 +336,10 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/KeychainAccess.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/AlamofireObjectMapper.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/ObjectMapper.framework",
 			);
 			outputPaths = (
 			);
@@ -344,8 +363,10 @@
 				730490071B672287007764FD /* StarredRepositoryViewController.swift in Sources */,
 				730490001B671CE6007764FD /* AuthViewController.swift in Sources */,
 				730490031B671E6F007764FD /* RepositoryViewController.swift in Sources */,
+				7304901A1B673DE7007764FD /* RepositoryApi.swift in Sources */,
 				730490091B67229A007764FD /* TrendingRepositoryViewController.swift in Sources */,
 				73B968A51B6622E90048C25E /* AppDelegate.swift in Sources */,
+				730490161B67365B007764FD /* Repository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +478,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = SwiftyGithub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -473,6 +495,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/Build/Products/Debug-iphoneos",
 				);
 				INFOPLIST_FILE = SwiftyGithub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
